@@ -17,7 +17,6 @@ $("#sizePicker").submit(function (event) {
 
 // Creating table rows and table data
 function makeGrid(height, width) {
-  table.innerHTML = "s";
   for (let row = 0; row < width; row++) {
     let newRow = table.insertRow();
     for (let cell = 0; cell < height; cell++) {
