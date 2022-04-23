@@ -5,13 +5,16 @@ var color = "colorPicker"
 // When size is submitted by the user, call makeGrid()
 const size = document.querySelector("sizePicker");
 const pickColor = document.querySelector("#colorPicker");
+const $tableElement = $('#pixelCanvas');
 const table = document.querySelector("#pixelCanvas")
 
 $("#sizePicker").submit(function (event) {
     event.preventDefault();
     height = $("#inputHeight").val();
     width = $("#inputWidth").val();
-    makeGrid(height, width);
+    $tableElement.html(''); //clear
+     makeGrid(height, width);
+    
 
 });
 
